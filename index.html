@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="screen1">
+
+            <h1>
+                Cadastro
+            </h1>
+            <p>
+                Complete os dados a seguir:
+            </p>
+            <form>
+                <div id="name">
+                    <span>
+                        Nome*(Ex.: Yuri)
+                    </span>
+                    <input type="text" name="inname" id="inname">
+                </div>
+                
+                <div id="last-name">
+                    <span>
+                        Sobrenome*(Ex.: Verwiebe)
+                    </span>
+                    <input type="text" name="inlast-name" id="inlast-name">
+                </div>
+                
+                <div id="tel">
+                    <span>
+                        Telefone*(Ex.: 47 996226396)
+                    </span>
+                    <input type="tel" name="intel" id="intel">
+                </div>
+                
+                <div id="birth">
+                    <span>
+                        Nascimento*(Ex.: 01/04/2000)
+                    </span>
+                    <input type="date" name="inbirth" id="inbirth">
+                </div>
+                
+                <div id="city">
+                    <span>
+                        Cidade*(Ex.: São Paulo)
+                    </span>
+                    <input type="text" name="incity" id="incity">
+                </div>
+
+                <button id="send">
+                    Enviar
+                </button>
+            </form>
+        </div>
+
+        <div class="screen2 hide">
+            <h1>
+                Dados pessoais
+            </h1>
+            <p>
+                Esses são todos os dados da última pessoa adicionada.
+            </p>
+            <div  id="pname">
+                <p>
+                    nome
+                </p>
+            </div>
+            <div  id="plast-name">
+                <p>
+                    sobrenome
+                </p>
+            </div>
+            <div  id="ptel">
+                <p>
+                    telefone
+                </p>
+            </div>
+            <div id="pbirth">
+                <p>
+                    nascimento
+                </p>
+            </div>
+            <div id="pcity">
+                <p>
+                    cidade
+                </p>
+            </div>
+
+            <button id="ok">
+                Ok
+            </button>
+        </div>
+
+        </main>
+        <script src="main.js"></script>
+    </body>
+    </html>
